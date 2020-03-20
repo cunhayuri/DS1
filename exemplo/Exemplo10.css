@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI Light', Arial, sans-serif;
+}
+header{
+    background-color: #2b579a;
+    height: 100px; 
+
+} 
+h1{ 
+    color:#FFF;
+    font-size: 36px;
+    font-weight: normal;
+    padding: 20px 30px;
+    
+}
+section{
+    margin: 20px;
+}
+h2{
+    color: #444;
+    font-size: 20px;
+    font-weight: normal;
+}
+li{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #444;
+    font-size: 20px;
+}
+footer p{ 
+    color: #898989;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 50px;
+}
+.primeiro{
+    color: red;
+}
+.grande{
+    font-size: 32px;
+}
