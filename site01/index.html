@@ -1,43 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0", 
-    shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no">
     <title>Primeiro Site BootStrap</title>
-<!-- Carrega CSS do Bootstrap-->
-<link rel="stylesheet" 
-href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Carrega CSS do Bootstrap-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-<!-- Carrega CSS Customizado -->
-<link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Carrega CSS Customizado -->
+    <link rel="stylesheet" href="assets/css/custom.css">
 
 </head>
+
 <body>
 
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href='#'>Faculdade MaterDei</a>
-                     <div class="collapse navbar-collapse justify-content-end">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Quem Somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Nossas Soluções</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Notícias</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contato</a>
-                            </li>
-                        </ul>
-                    </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div id="menu" class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nossas Soluções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
-    
+
+    <div id="carrossel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/imagem01.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/imagem02.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/imagem03.jpg" class="d-block w-100">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carrossel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carrossel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <ol class="carousel-indicators">
+            <li data-target="#carrossel" data-slide-to="0" class="active"></li>
+            <li data-target="#carrossel" data-slide-to="1"></li>
+            <li data-target="#carrossel" data-slide-to="2"></li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="assets/img/noticia1.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem</h5>
+                        <p class="card-subtitle text-muted"> 26 março 2020</p>
+                        <p class="card-text">Possimus quia illum ipsum aspernatur consequuntur eos corporis, commodi quo
+                            officia ipsa. Officia, nesciunt officiis eius voluptatibus quod pariatur et illum beatae.
+                        </p>
+                        <a href="#" class="btn btn-outline-dark btn-sn">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img src="assets/img/noticia2.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Lorem</h5>
+                    <p class="card-subtitle text-muted"> 02 Abril 2020</p>
+                    <p class="card-text">Possimus quia illum ipsum aspernatur consequuntur eos corporis, commodi quo
+                        officia ipsa. Officia, nesciunt officiis eius voluptatibus quod pariatur et illum beatae.
+                    </p>
+                    <a href="#" class="btn btn-outline-dark btn-sn">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <img src="assets/img/noticia3.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Lorem</h5>
+                <p class="card-subtitle text-muted"> 22 Abril 2020</p>
+                <p class="card-text">Possimus quia illum ipsum aspernatur consequuntur eos corporis, commodi quo
+                    officia ipsa. Officia, nesciunt officiis eius voluptatibus quod pariatur et illum beatae.
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-sn">Saiba Mais</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Nossa Linha Educacional</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus exercitationem sunt
+                quod tempora quis. Nulla quos labore et rem officia eos molestias veniam minus dolore. Saepe iusto
+                laboriosam voluptatibus.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere soluta voluptas consequatur quo
+                    doloremque reiciendis nostrum. Culpa illum ex sit? Architecto, amet molestiae. Repudiandae
+                    assumenda, eos dolor repellendus obcaecati molestias?</h2>
+                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsam, neque illo
+                    assumenda dicta inventore similique nemo. Dicta incidunt, optio sit ipsa qui beatae officia quia
+                    debitis voluptatibus culpa deleniti!
+
+                </p>
+
+            </div>
+            <div class="col">
+                <img src="assets/img/customer.png">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Paraná</h3>
+                    <p>11 9999-9999</p>
+                </div>
+                <div class="col">
+                    <h3>São Paulo</h3>
+                    <p>46 9999-9999</p>
+                </div>
+                <div class="col">
+                    <h3>Santa Catarina</h3>
+                    <p>48 9999-9999</p>
+                </div>
+                <div class="col">
+                    <h3>Rio Grande do Sul</h3>
+                    <p>55 9999-9999</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
