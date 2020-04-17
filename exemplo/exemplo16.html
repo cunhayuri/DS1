@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 16 - Notação de Objetos Javascript</title>
+
+    <!-- Carrega código em javascript -->
+    <script type="text/javascript">
+
+        function criar() {
+            //Mostra mensagem na console
+            console.log('Criando objeto');
+
+            //Popula um objeto com atributos e valores
+            var objeto = {
+                nome: 'Libório Júnior',
+                endereco: 'Rua Mato Grosso, 200',
+                codigo: 123456
+            };
+
+            //Retorna o objeto
+            return objeto;
+        }
+
+        function testar() {
+            //Pega o retorno da função e atribui a variavel cliente
+            var cliente = criar();
+
+            //Monstra um alerta com o conteúdo da variavel cliente
+            alert('Nome: ' + cliente.nome + '\n' +
+                'Endereço: ' + cliente.endereco + '\n' +
+                'Código: ' + cliente.codigo);
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <button role="button" onclick="testar()">Gerar</button>
+
+</body>
+
+</html>

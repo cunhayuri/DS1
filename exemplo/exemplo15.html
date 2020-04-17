@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 15 - Função que chama função</title>
+
+    <!-- Carrega código em javascript -->
+    <script type="text/javascript">
+
+        //Retornar uma mensagem qualquer
+        function mensagem() {
+            return "Este é um teste de mensagem";
+        }
+        //Pega o retorno da função mensagem e dispara um alerta com o seu conteúdos
+        function testar() {
+            var msg = mensagem();
+
+            //Imprime na console o valor da variavel msg
+            console.log(msg);
+
+            //Mostra um alerta na tela do navegador com o conteudo da variavel msg
+            alert(msg);
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <button role="button" onclick="testar()">Gerar</button>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 14 - Imprime lista a partir de clique</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Carrega código em javascript -->
+    <script type="text/javascript">
+
+        function clique() {
+            document.writeln('<ul>');
+
+            for (var i = 0; i <= 10; i++) {
+                document.writeln('<li>Item x</li>');//Forma 1
+                document.writeln(`<li>Item ${i}</li>`);//Forma 2
+            }
+            document.writeln('</ul>');
+        }
+
+    </script>
+
+    <style>
+        .form {
+            margin: 0 auto;
+            margin-top: 60px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form form-inline">
+            <div class="form-group">
+
+                <button role="button" class="btn btn-primary btn-lg" onclick="clique()">Gerar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
