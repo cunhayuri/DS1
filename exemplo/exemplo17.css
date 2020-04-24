@@ -1,0 +1,26 @@
+  
+body {
+    padding-top: 40px;
+}
+.calculadora {
+    width: 400px;
+    background-color: #ccc;
+    border: 1px solid #666;
+}
+.col, .col-3, .col-6 {
+    padding: 3px;
+}
+.row {
+    padding: 0 5px;
+}
+.row:last-of-type {
+    padding-bottom: 5px;
+}
+h1 {
+    border: 1px solid #999;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 72px;
+    font-weight: 300;
+    background-color: #f5f5f5;
+}

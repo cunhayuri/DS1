@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 17 - Calculadora em JS</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="exemplo17.css">
+</head>
+<body>
+
+    <div class="calculadora container">
+        <div class="row">
+            <div class="col text-right">
+                <h1 id="display">0</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-secondary" onclick="limpar()">C</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-secondary" onclick="inputValue('+/-')">+/-</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-secondary" onclick="inputValue('%')">%</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-warning" onclick="setOperacao('/')">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-success" onclick="inputValue('7')">7</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-success" onclick="inputValue('8')">8</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-success" onclick="inputValue('9')">9</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-warning" onclick="setOperacao('x')">x</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-success" onclick="inputValue('4')">4</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-success" onclick="inputValue('5')">5</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-success" onclick="inputValue('6')">6</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-warning" onclick="setOperacao('-')">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-success" onclick="inputValue('1')">1</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-success" onclick="inputValue('2')">2</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-success" onclick="inputValue('3')">3</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-warning" onclick="setOperacao('+')">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button class="btn btn-lg btn-block btn-success" onclick="inputValue('0')">0</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-lg btn-block btn-secondary" onclick="inputValue('.')">.</button>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-lg btn-block btn-warning" onclick="calcular()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="exemplo17.js"></script>
+
+</body>
+</html>
