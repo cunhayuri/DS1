@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 19 - Pegar Dados de Campos (AngularJS)</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <style>
+        .container {
+            margin-top: 70px;
+        }
+        ol {
+            border: 1px solid #d20000;
+            margin-top: 50px;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <div class="form-group">
+                    <label>Nome Completo</label>
+                    <input type="text" class="form-control" ng-model="fieldNome">
+                </div>
+
+                <div class="form-group">
+                    <label>Endereço</label>
+                    <input type="text" class="form-control" ng-model="fieldEndereco">
+                </div>
+
+                <div class="form-group">
+                    <label>Cidade</label>
+                    <input type="text" class="form-control" ng-model="fieldCidade">
+                </div>
+
+                <div class="form-group">
+                    <label>Estado</label>
+                    <select class="form-control" ng-model="fieldUF">
+                        <option value="">Selecione o Estado</option>
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SP">São Paulo</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ol>
+                    <li>
+                        <p>Nome Completo: {{ fieldNome }}</p>
+                    </li>
+                    <li>
+                        <p>Cidade: {{ fieldCidade }}</p>
+                    </li>
+                    <li>
+                        <p>UF: {{ fieldUF }}</p>
+                    </li>
+                    <li>
+                        <p>Endereço:</p>
+                        <input type="text" class="form-control" ng-model="fieldEndereco">
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</body>
+
+</html>
